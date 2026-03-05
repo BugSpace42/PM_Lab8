@@ -21,6 +21,14 @@ def task_c():
             result += (j - i + 1) / (i + j)
     return result
 
+def task_d():
+    result = 0.0
+    for i in range(1, 100):
+        for j in range(1, i):
+            result += 1 / (2 * j + i)
+    return result
+
 print(task_a())
 print(task_b())
 print(task_c())
+print(task_d())
