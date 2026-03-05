@@ -14,5 +14,13 @@ def task_b():
             result += math.sin(i**3 + j**4)
     return result
 
+def task_c():
+    result = 0.0
+    for i in range(1, 100):
+        for j in range(1, 100):
+            result += (j - i + 1) / (i + j)
+    return result
+
 print(task_a())
 print(task_b())
+print(task_c())
